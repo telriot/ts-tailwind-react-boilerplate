@@ -10,9 +10,7 @@ export const ThemeContext = createContext(theme);
 
 const AllTheProviders: FC<{ children?: React.ReactNode }> = ({ children }) => {
 	return (
-		<ThemeContext.Provider value={theme}>
-			{children}
-		</ThemeContext.Provider>
+		<ThemeContext.Provider value={theme}>{children}</ThemeContext.Provider>
 	);
 };
 
